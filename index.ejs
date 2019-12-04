@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Dashboard</title>
+</head>
+<body>
+    <div style='text-align: center; font-family: sans-serif;'>
+        <h2>Welcome to Mongoose Dashboard</h2><br>
+        <img src='koala_bears.jpg' height='250px;' width='400px;' alt='koala_bears'><br><br>
+        <button style='font-size: 24px;'><a href='/mongooses/new' style='text-decoration: none; color:green;'>Create new animal</a></button>
+        
+        <br><br>
+
+        <% for(var a of allAnimals) { %>
+            <button style='font-size: 14px;'><a href='/mongooses/<%= a._id %>' style= 'text-decoration: none; color:green;'>View <%= a.name %></a></button>
+            <br>
+            <button style='font-size: 14px; text-decoration: none;'><a href='/mongooses/destroy/<%= a._id%>' style= 'text-decoration: none; color:green;'>Delete <%= a.name %></a></button>
+            <br><br>
+        <% } %> 
+        
+    </div>
+</body>
+</html>

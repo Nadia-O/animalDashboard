@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Animal</title>
+</head>
+<body>
+    <div style='text-align: center; font-family: sans-serif;'>
+    <form action='/mongooses' method='POST'>
+        <label for='name'>Name:</label><br>
+        <input type='text' name='name'><br>
+        <label for='stripes'>Stripes:</label><br>
+        <input type='number' name='stripes'><br>
+        <label for='description'>Description</label><br>
+        <textarea name='description' col='30' rows='5'></textarea><br>
+        <input type='submit' value='Submit'>
+    </form><br>
+    <a href='/'>Go Home</a>
+    </div>
+</body>
+</html>
